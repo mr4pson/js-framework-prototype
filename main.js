@@ -1,5 +1,7 @@
 import { Component, Router, ucfirst } from './core.js';
 import { HeaderComponent } from './components/header.js';
+
+// exports
 import { NewsPageComponent } from './components/news.js';
 import { ProjectsPageComponent } from './components/projects.js'; 
 
