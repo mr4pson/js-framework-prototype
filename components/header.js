@@ -1,7 +1,6 @@
-import { Component } from '../core.js'
 
-export class HeaderComponent extends Component {
-    getView = () => {
+export class HeaderComponent {
+    render = () => {
         return `
             <div class="header">
                 <a hyperLink="projects" href="news.html">Projects</a>
