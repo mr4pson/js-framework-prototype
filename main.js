@@ -1,5 +1,5 @@
-import { Component, Router, ucfirst } from './core.js';
-import { HeaderComponent } from './components/header.js';
+import { Router, ucfirst } from './core.js';
+import { AppComponent } from './components/app.js';
 
 // exports
 import { NewsPageComponent } from './components/news.js';
@@ -9,10 +9,8 @@ function getPageClass(name) {
     return eval('new ' + ucfirst(name) + 'PageComponent()');
 }
 
-export const headerComponent = new HeaderComponent();
-
 export const router = new Router();
-export const app = new Component();
+export const app = new AppComponent();
 app.render = function() {
     const root = document.getElementById('root');
 
@@ -31,3 +29,5 @@ app.render = function() {
         })
     });
 }
+
+app.render();
